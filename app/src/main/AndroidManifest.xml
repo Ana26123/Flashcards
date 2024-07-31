@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permisos necesarios para leer y escribir en el almacenamiento externo -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Flashcards_8"
+        tools:targetApi="31">
+        <activity
+            android:name=".Vistas.ResultadoJuegoActivity"
+            android:exported="false" />
+        <!-- Actividad principal que se lanza al iniciar la aplicación -->
+        <activity
+            android:name=".Vistas.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Definiciones de otras actividades en la aplicación -->
+        <activity
+            android:name=".Vistas.Login_maestro"
+            android:exported="true" />
+        <activity
+            android:name=".Vistas.Login_alumno"
+            android:exported="true" /> <!-- Agrega tu actividad Agregar_maestro aquí con android:exported="true" -->
+        <activity
+            android:name=".Vistas.Agregar_maestro"
+            android:exported="true" />
+        <activity
+            android:name=".Vistas.Agregar_alumno"
+            android:exported="true" />
+        <activity
+            android:name=".Vistas.Menu"
+            android:exported="true" />
+        <activity
+            android:name=".Vistas.Alumnos"
+            android:exported="true" />
+        <activity
+            android:name=".Vistas.Docentes"
+            android:exported="true" />
+        <activity
+            android:name=".Vistas.Palabras"
+            android:exported="true" />
+        <activity
+            android:name=".Vistas.Sesiones"
+            android:exported="true" />
+        <activity
+            android:name=".Vistas.PruebaPalabras"
+            android:exported="true" />
+        <activity
+            android:name=".Vistas.ModoPractica"
+            android:exported="true" />
+        <activity
+            android:name=".GraficaAciertosFallos"
+            android:exported="true" />
+        <activity
+            android:name=".Utilidades.infoTec"
+            android:exported="true" />
+        <activity
+            android:name=".Utilidades.Creditos"
+            android:exported="true" />
+        <activity
+            android:name=".Vistas.Agregar_palabras"
+            android:exported="true" /> <!-- Metadatos adicionales -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    tools:context=".Vistas.Alumnos">
+
+    <LinearLayout
+        android:id="@+id/LL_Alumnos"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@color/Azul_zodiaco"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/alumno"
+
+            />
+
+            <TextView
+                android:id="@+id/txtalumnosactalumnos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/alumnos"
+                android:fontFamily="@font/baloo"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <Button
+                android:id="@+id/BTNAgregarAlumnos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="OnClick"
+                android:text="@string/btn_agregar"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtalumnosactalumnos"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/BTNModificarAlumnos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="OnClick"
+                android:text="@string/btn_modificar"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BTNAgregarAlumnos"
+                android:layout_marginTop="5dp"
+
+            />
+
+            <Button
+                android:id="@+id/BTNEliminarAlumnos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="OnClick"
+                android:text="@string/btn_eliminar"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BTNModificarAlumnos"
+                android:layout_marginTop="5dp"
+
+            />
+
+
+            <Button
+                android:id="@+id/btnVolverAlumnos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="OnClick"
+                android:text="@string/btn_volver"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BTNEliminarAlumnos"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TVListaAlumnos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/lista_alumnos"
+        android:fontFamily="@font/baloo"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toEndOf="@+id/LL_Alumnos"
+        app:layout_constraintTop_toTopOf="parent"
+
+    />
+
+
+    <ListView
+        android:id="@+id/LvAlumnos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:listSelector="@color/gray"
+        app:layout_constraintStart_toEndOf="@+id/LL_Alumnos"
+        app:layout_constraintTop_toBottomOf="@+id/TVListaAlumnos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

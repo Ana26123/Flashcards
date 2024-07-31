@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="200dp"
+    android:layout_height="150dp"
+    android:padding="15dp"
+    android:background="@color/Azul_zodiaco">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="#D1D1D1">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/logo_inicial"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/TVDocente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Docente:"
+
+        />
+
+        <TextView
+            android:id="@+id/TVAlumno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#323232"
+            android:textSize="13sp"
+            android:text="Alumno:"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grupoPersonas">
+
+        <item
+            android:icon="@drawable/alumno"
+            android:id="@+id/navAlumnos"
+            android:title="Alumnos"
+            />
+
+        <item
+            android:icon="@drawable/docente"
+            android:id="@+id/navMaestros"
+            android:title="Docentes"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/grupoOpciones">
+
+        <item
+            android:icon="@drawable/libro"
+            android:id="@+id/navPalabras"
+            android:title="Palabras"
+            />
+
+        <item
+            android:icon="@drawable/lista2"
+            android:id="@+id/navSesion"
+            android:title="Sesion"
+            />
+
+    </group>
+
+    <group
+        android:id="@+id/grupoSalir">
+
+        <item
+            android:icon="@drawable/colegio"
+            android:id="@+id/InfoTEC"
+            android:title="InfoTEC"
+            />
+
+        <item
+            android:icon="@drawable/img"
+            android:id="@+id/Creditos"
+            android:title="Otros creditos"
+            />
+
+        <item
+            android:icon="@drawable/salida"
+            android:id="@+id/navSalir"
+            android:title="Salir"
+            />
+    </group>
+
+</menu>

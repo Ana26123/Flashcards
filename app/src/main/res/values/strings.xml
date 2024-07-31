@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Flashcards_8</string>
+    <string name="Editar">Editar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    //Textos datos personales
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_apellidos">Apellidos</string>
+    <string name="hint_comentarios">Comentarios</string>
+    <string name="hint_sexo">Sexo</string>
+    <string name="hint_edad">Edad</string>
+    <string name="hint_edadmental">Edad mental</string>
+    <string name="hint_parentesco">Parentesco</string>
+    <string name="hint_palabra">Palabra</string>
+
+    <string name="nombre">Nombre:</string>
+    <string name="apellidos">Apellidos:</string>
+    <string name="comentarios">Comentarios:</string>
+    <string name="sexo">Sexo:</string>
+    <string name="edad">Edad:</string>
+    <string name="edadmental">Edad mental:</string>
+    <string name="parentesco">Parentesco:</string>
+    <string name="palabra">Palabra:</string>
+
+    //Textos listas
+    <string name="lista_docentes">Lista de docentes</string>
+    <string name="lista_alumnos">Lista de alumnos</string>
+    <string name="palabras">Palabras</string>
+    <string name="docentes">Docentes</string>
+    <string name="alumnos">Alumnos</string>
+    <string name="selecciona_un_nivel">Selecciona un nivel</string>
+
+    //Botones
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_modificar">Modificar</string>
+    <string name="hint_imagen">Imagen</string>
+    <string name="btn_grabar">Grabar</string>
+    <string name="btn_reproducir">Reproducir</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_inicioSesion">Iniciar sesion</string>
+    <string name="btn_perfil">Perfil</string>
+    <string name="sesion">Sesion</string>
+    <string name="sesiones">Sesiones</string>
+    <string name="practica">Practica</string>
+    <string name="btn_inicio_sesion">Iniciar sesion</string>
+    <string name="audio">Audio</string>
+    <string name="agregar_maestro">Agregar maestro(a)</string>
+    <string name="agregar_alumno">Agregar Alumno(a)</string>
+    <string name="inicio_maestro">Inicio de sesion de maestro(a)</string>
+    <string name="inicio_alumno">Inicio de sesion de alumno(a)</string>
+    <string name="seleccion_maestro">Seleccionar maestro</string>
+    <string name="seleccion_alumno">Seleccionar alumno(a)</string>
+    <string name="maestro_seleccionado">Maestro Seleccionado</string>
+    <string name="tituloeditar">Modificar datos</string>
+    <string name="alumno_seleccionado">Alumno Seleccionado</string>
+    <string name="btn_seleccionar_imagen">Seleccionar imagen</string>
+    <string name="btn_iniciar_sesion">Iniciar Sesion</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="btn_volver">Volver</string>
+    <string name="salir">Salir</string>
+
+
+    //Palabras
+    <string name="AgregarPalabra">Agregar palabra</string>
+    <string name="NuevaP">Nueva Palabra</string>
+    <string name="AgregarP">Agregar palabra</string>
+    <string name="Palabra">Palabra</string>
+    <string name="SeleccionarImagen">Seleccionar imagen</string>
+    <string name="Grabar">Grabar</string>
+    <string name="Subir_Audio">Subir Audio</string>
+    <string name="Reproducir">Reproducir</string>
+    <string-array name="niveles_array">
+        <item>Nivel 1</item>
+        <item>Nivel 2</item>
+        <item>Nivel 3</item>
+    </string-array>
+
+
+    //niveles
+    <string name="nivel1">Nivel 1</string>
+    <string name="nivel2">Nivel 2</string>
+    <string name="nivel3">Nivel 3</string>
+    <string name="nivel4">Nivel 4</string>
+
+    //fechas
+    <string name="fechaInicio">Fecha de inicio</string>
+    <string name="fechaCierre">Fecha de cierre</string>
+
+    //JUEGO
+    <string name="Puntaje">Puntaje</string>
+    <string name="opcion1">Opcion1</string>
+    <string name="opcion2">opcion2</string>
+    <string name="opcion3">opcion3</string>
+    <string name="opcion4">opcion4</string>
+    <string name="Confirmar">Confirmar</string>
+    <string name="Opciones">Selecciona la opcion correcta</string>
+
+    <string-array name="opciones_sexo">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+
+</resources>

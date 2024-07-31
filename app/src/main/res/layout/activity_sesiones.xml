@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    tools:context=".Vistas.Sesiones">
+
+    <LinearLayout
+        android:id="@+id/LL_Sesiones"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@color/Azul_zodiaco"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/IMGSesion"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/lista2" />
+
+            <TextView
+                android:id="@+id/txtSesion_Alumno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Sesiones del alumno: "
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                app:layout_constraintHorizontal_bias="0.300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/IMGSesion" />
+
+            <TextView
+                android:id="@+id/txtAlumnoSesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="Alumno"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSesion_Alumno" />
+
+            <Button
+                android:id="@+id/btnSalirSesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_500"
+                android:onClick="onclick"
+                android:text="@string/btn_volver"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.884" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TVListaSesiones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Lista de las sesiones registradas"
+        android:fontFamily="@font/baloo"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toEndOf="@+id/LL_Sesiones"
+        app:layout_constraintTop_toTopOf="parent"
+
+    />
+
+    <ListView
+        android:id="@+id/LVSesiones"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:listSelector="@color/gray"
+        app:layout_constraintStart_toEndOf="@+id/LL_Sesiones"
+        app:layout_constraintTop_toBottomOf="@+id/TVListaSesiones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

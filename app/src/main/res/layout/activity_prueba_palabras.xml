@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Vistas.PruebaPalabras">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="@color/Azul_zodiaco"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Bpracticaregresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_500"
+                android:fontFamily="@font/baloo"
+                android:onClick="onclick"
+                android:text="@string/btn_volver"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.837" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:text="Prueba de palabras"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/txtNivelP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Nivel"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imgPractica"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ico_galeria" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_bottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Azul_zodiaco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageViewPalabras"
+        android:layout_width="504dp"
+        android:layout_height="421dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnconfirmar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/txtOpciones"
+        android:layout_width="445dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/baloo"
+        android:text="Seleccione la palabra correcta"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnReproducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="560dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="OnClick"
+        android:text="@string/Reproducir"
+        android:textColor="@color/white"
+        app:icon="@android:drawable/ic_lock_silent_mode_off"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <Button
+        android:id="@+id/Opcion1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="OnClick"
+        android:text="@string/opcion1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/Opcion2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Opcion2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="OnClick"
+        android:text="@string/opcion2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/Opcion3"
+        app:layout_constraintStart_toEndOf="@+id/Opcion1"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Opcion3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="OnClick"
+        android:text="opcion3"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/Opcion4"
+        app:layout_constraintStart_toEndOf="@+id/Opcion2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Opcion4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="OnClick"
+        android:text="opcion4"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Opcion3"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnconfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="167dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="OnClick"
+        android:text="@string/Confirmar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layer"
+        android:layout_width="579dp"
+        android:layout_height="463dp"
+        app:constraint_referenced_ids="imageViewPalabras"
+        tools:layout_editor_absoluteX="688dp"
+        tools:layout_editor_absoluteY="222dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
